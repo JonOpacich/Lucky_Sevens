@@ -4,7 +4,7 @@ let startingBet,
   highestMoneyRollCount = 0,
   totalRolls = 0;
 
-
+ //called by start button
 let start = () => {
   startingBet = parseInt(document.getElementById("betInput").value);
   highestMoney = document.getElementById("betInput").value;
@@ -15,10 +15,11 @@ let start = () => {
     document.getElementById("betInput").disabled = 1;
     gameMoney = startingBet;
 
+    //roll dice until out of money
     while (gameMoney > 0) {
       rollDice();
     }
-
+    //update and display results
     document.getElementById("results").setAttribute("style", "");
     document
       .getElementById("startButton")
