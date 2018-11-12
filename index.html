@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucky Sevens</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="card">
+        <img id="mrMonopoly" src="https://vignette.wikia.nocookie.net/wikis-are-for-nerds/images/f/fb/MrMonopoly.png/revision/latest?cb=20181006221824" alt="Mr. Monopoly">
+      <div class="title">
+        Lucky Sevens
+        <span> <img id="diceImage" src="./assets/dice.png" alt="dice"/></span>
+      </div>
+
+      <form>
+        <label>Starting bet: $</label>
+        <input type="number" id="betInput" value="0" /> <br />
+        <button onclick="start()" type="button" id="startButton">Start</button>
+      </form>
+
+      <div id="results" style="display:none">
+        <hr />
+        <div class="title"><u>Results</u></div>   
+        <table>
+          <tr>
+            <td class="rowTitle">Starting Bet</td>
+            <td id="startingBet"></td>
+          </tr>
+          <tr>
+            <td class="rowTitle">Total Rolls Before Going Broke</td>
+            <td id="totalRolls"></td>
+          </tr>
+          <tr>
+            <td class="rowTitle">Highest Amount Won</td>
+            <td id="highestMoney"></td>
+          </tr>
+          <tr>
+            <td class="rowTitle">Roll Count at Highest Amount Won</td>
+            <td id="highestMoneyRollCount"></td>
+          </tr>
+        </table>
+
+        <div>
+          <button
+            type="button"
+            name="reload"
+            id="reload"
+            onclick="location.reload();"
+          >
+            Play Again
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Roboto");
+
+body {
+  background-image: url(./assets/qbkls.png);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+}
+.title {
+  font-family: "Indie Flower", cursive;
+  font-size: 4rem;
+  margin-right: 0;
+}
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: solid 1px grey;
+  box-shadow: 2px 2px 2px rgb(20, 20, 20);
+  padding: 10px;
+  max-width: 500px;
+  margin: 30vh auto 0;
+  text-align: center;
+  position: relative;
+}
+#diceImage {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: auto;
+}
+#results-container {
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+}
+#mrMonopoly {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: -70px;
+  right: -160px;
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  font-size: 20px;
+  width: 50px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+td {
+  text-align: right;
+}
+td.rowTitle {
+  text-align: left !important;
+}
+tr:hover {
+  background-color: #ddd;
+}
